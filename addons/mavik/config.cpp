@@ -12,7 +12,7 @@ class CfgPatches
             "A3_Drones_F",
 			"cba_settings"
 		};
-		requiredVersion=0.1;
+		requiredVersion = 2.22;
 		units[]=
 		{
 			"mavik_3_OPF",
@@ -275,7 +275,7 @@ class CfgVehicles
             minAngleY=-150;
             maxAngleY=150;
 		};
-		class Viewoptics: ViewOptics
+		class ViewOptics: ViewOptics
 		{
 			initAngleX=0;
 			minAngleX=0;
@@ -845,7 +845,7 @@ class CfgVehicles
 			};
 			thermalMode[]={0,1,6};
 		};
-		class Viewoptics: ViewOptics
+		class ViewOptics: ViewOptics
 		{
 			initAngleX=0;
 			minAngleX=0;
