@@ -2,26 +2,27 @@
 
 [![CI](https://github.com/Sam-DarkBall-Mods/Mavik/actions/workflows/ci.yml/badge.svg)](https://github.com/Sam-DarkBall-Mods/Mavik/actions/workflows/ci.yml)
 
-Mavik reconnaissance drone systems for Arma 3.
+Mavik adds Mavik 3 and Mavik 3T reconnaissance drones for BLUFOR, OPFOR and
+Independent. The mod includes a flight HUD, signal calculation, battery
+replacement, inventory packing and support for a grenade drop attachment.
 
 ## Requirements
 
 - Arma 3 2.22 or newer
-- Additional runtime dependencies declared by `CfgPatches`
+- CBA_A3
 
-## Development
+## Building
 
 ```bash
+python3 -B -m unittest discover -s tests -p "test_*.py" -v
 hemtt check
 hemtt build --no-bin
-python3 -B -m unittest discover -s tests -p "test_*.py" -v
 ```
 
-Legacy `CfgPatches`, function names, virtual PBO prefixes, and release PBO
-filenames are compatibility contracts and must not change in a patch release.
+The game still loads assets from the `mavik` prefix, and releases keep the
+`mavik.pbo` filename.
 
 ## License
 
-SQF, Arma configuration, and tooling are GPL-2.0-or-later. Original Arma
-models, textures, materials, animations, and audio are APL-SA. See
-[LICENSES.md](LICENSES.md) and closer notices.
+Code and configs use GPL-2.0-or-later. Original drone models, textures,
+materials and audio use APL-SA. See [LICENSES.md](LICENSES.md).
